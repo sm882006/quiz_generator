@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Generator</h1>
+    <form id="quizForm">
+      <div id="questionsContainer">
+        <div class="questionBlock">
+          <label>Question:</label>
+          <input type="text" name="question" placeholder="Enter question" required>
+          <label>Options:</label>
+          <input type="text" name="option1" placeholder="Option 1" required>
+          <input type="text" name="option2" placeholder="Option 2" required>
+          <input type="text" name="option3" placeholder="Option 3" required>
+          <input type="text" name="option4" placeholder="Option 4" required>
+          <label>Correct Answer:</label>
+          <select name="correctAnswer" required>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select>
+          <button type="button" class="removeQuestion">Remove Question</button>
+        </div>
+      </div>
+      <button type="button" id="addQuestion">Add Question</button>
+      <button type="submit">Generate Quiz</button>
+    </form>
+    <div id="quizOutput"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
